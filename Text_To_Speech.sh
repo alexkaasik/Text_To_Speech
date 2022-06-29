@@ -8,9 +8,9 @@
 let a=$(ls | wc -l)
 
 
-# loop around how many came out from $a
+# Loop around how many came out from $a
 # What does it do?
-# text to audio file: example 1 >> 1.wav
+# Turn text to audio file: example 1 >> 1.wav
 for ((i = 1 ; i <= $a ; i++)); do
   espeak -f "$i" -w "$i.wav"
 done
